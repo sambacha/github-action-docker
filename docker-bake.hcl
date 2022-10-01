@@ -7,7 +7,7 @@ target "docker-metadata-action" {}
 target "build" {
   inherits = ["docker-metadata-action"]
   context = "./"
-  dockerfile = "Dockerfile"
+  dockerfile = "base.dockerfile"
   platforms = [
     "linux/amd64"
   ]

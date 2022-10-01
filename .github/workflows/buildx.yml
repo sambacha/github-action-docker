@@ -1,5 +1,4 @@
-
-name: docker
+name: buildx
 
 on:
   pull_request:
@@ -22,7 +21,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            manifoldfinance/docker-remixd
+            sambacha/github-docker-action
           tags: |
             type=ref,event=branch
             type=ref,event=pr
